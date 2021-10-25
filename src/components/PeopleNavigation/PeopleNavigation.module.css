@@ -1,0 +1,15 @@
+.navButtonWrapper{
+    text-align: center;
+}
+
+.navButtonWrapper button{
+    margin: 10px;
+    min-width: 90px;
+    border:1px solid transparent;
+}
+
+.navButtonWrapper a{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
