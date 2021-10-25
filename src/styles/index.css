@@ -12,7 +12,9 @@
 
     --font-bold:600;
     --font-family-main:sans-serif;
+    --font-size-sub-header:18px;
     --font-size-header:26px;
+
     --border-radius-small:3px;
 
     --width-max:1200px;
@@ -21,7 +23,12 @@
 
     --text-shadow-yellow:
         0px 0px 2px var(--color-white),
-        0px 0px 40px var(--color-blue);
+        0px 0px 40px var(--color-yellow);
+
+    --text-shadow-blue:
+        0px 0px 2px var(--color-white),
+        5px 5px 20px var(--color-blue);  
+
     --transition:4s;
 }
 
