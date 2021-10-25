@@ -7,7 +7,7 @@ import { getApiResource } from '../../utils/network';
 import { getPeopleImage } from '../../services/getPeopleData';
 import PersonPhoto from '../../components/PersonPage/PersonPhoto/PersonPhoto';
 import PersonInfo from '../../components/PersonPage/PersonInfo/PersonInfo';
-
+import PersonLinkBack from '../../components/PersonPage/PersonLinkBack/PersonLinkBack';
 const PersonPage = ({match,setErrorApi})=>{
    const[personInfo,setPersonInfo]=useState(null);
    const[personName,setPersonName]=useState('');
@@ -45,6 +45,7 @@ const PersonPage = ({match,setErrorApi})=>{
   },[])
   return(
     <>
+        <PersonLinkBack/>
         <div className={styles.wrapper}>
             <span className={styles.person__name}>{personName}</span>
             <div className={styles.container}>
