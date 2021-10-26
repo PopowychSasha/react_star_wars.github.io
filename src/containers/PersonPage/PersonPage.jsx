@@ -13,17 +13,21 @@ import { Suspense } from 'react';
 const PersonFilms = React.lazy(()=>import('../../components/PersonPage/PersonFilms/PersonFilms'));
 
 const PersonPage = ({match,setErrorApi})=>{
+   const[personId,setPersonId] = useState();
    const[personInfo,setPersonInfo]=useState(null);
    const[personName,setPersonName]=useState('');
    const[personPhoto,setPersonPhoto]=useState(null);
    const[personFilms,setPersonFilms] = useState();
 
-  const id = match.params.id;
+  
     
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async()=>{
-      
+    const id = match.params.id;
     const res = await getApiResource(API_PERSON+'/'+id);
+
+    setPersonId(id);
+
     if(res)
     {
         setPersonInfo([
@@ -55,7 +59,7 @@ const PersonPage = ({match,setErrorApi})=>{
         <div className={styles.wrapper}>
             <span className={styles.person__name}>{personName}</span>
             <div className={styles.container}>
-                    <PersonPhoto personPhoto={personPhoto}/>
+                    <PersonPhoto personPhoto={personPhoto} personName={personName} personId={personId}/>
                 {personInfo && (
                     <PersonInfo personInfo={personInfo}/>
                 )}

@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.favoriteItem{
+    margin: 10px;
+    border:1px solid silver;
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.favoriteHeader{
+    font-size:'40px';
+    text-align: center;
+    font-weight:900;
+    color:white;
+}

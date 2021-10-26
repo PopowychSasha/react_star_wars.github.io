@@ -1,11 +1,7 @@
-export const setPersonToFavorite = ()=>{
-    return{
-        type:'ADD'
-    }
-}
+import favoriteReducer from "./favoriteReducer";
+import { combineReducers } from "redux";
 
-export const removePersonFromFavorite = ()=>{
-    return{
-        type:'ADD'
-    }
-}
+const rootReducer = combineReducers({
+    favoriteReducer
+});
+export default rootReducer;

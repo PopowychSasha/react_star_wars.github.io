@@ -3,7 +3,7 @@ import styles from  './PeopleList.module.css';
 import { Link } from 'react-router-dom';
 const PeopleList = ({people})=>{
   return(
-    <>
+    <>  
         <ul className={styles.list__container}>
             {people.map(({id, name, img}) => (
                 <li className={styles.list__item} key={id}>
