@@ -1,17 +1,22 @@
 
 import styles from  './PersonPage.module.css';
 import { API_PERSON } from '../../constants/api';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { withErrorApi } from '../../hoc-helpers/withErrorApi';
 import { getApiResource } from '../../utils/network';
 import { getPeopleImage } from '../../services/getPeopleData';
 import PersonPhoto from '../../components/PersonPage/PersonPhoto/PersonPhoto';
 import PersonInfo from '../../components/PersonPage/PersonInfo/PersonInfo';
 import PersonLinkBack from '../../components/PersonPage/PersonLinkBack/PersonLinkBack';
+import UILoading from '../../components/UILoading/UILoading';
+import { Suspense } from 'react';
+const PersonFilms = React.lazy(()=>import('../../components/PersonPage/PersonFilms/PersonFilms'));
+
 const PersonPage = ({match,setErrorApi})=>{
    const[personInfo,setPersonInfo]=useState(null);
    const[personName,setPersonName]=useState('');
    const[personPhoto,setPersonPhoto]=useState(null);
+   const[personFilms,setPersonFilms] = useState();
 
   const id = match.params.id;
     
@@ -33,7 +38,8 @@ const PersonPage = ({match,setErrorApi})=>{
 
         setPersonName(res.name);
         setPersonPhoto(getPeopleImage(id));
-        //res.films;
+        
+        res.films.length && setPersonFilms(res.films);
 
         setErrorApi(false);
     }
@@ -49,9 +55,14 @@ const PersonPage = ({match,setErrorApi})=>{
         <div className={styles.wrapper}>
             <span className={styles.person__name}>{personName}</span>
             <div className={styles.container}>
-                <PersonPhoto personPhoto={personPhoto}/>
+                    <PersonPhoto personPhoto={personPhoto}/>
                 {personInfo && (
                     <PersonInfo personInfo={personInfo}/>
+                )}
+                {personFilms && (
+                    <Suspense fallback={<UILoading/>}>
+                        <PersonFilms personFilms={personFilms}/>
+                    </Suspense>
                 )}
             </div>
         </div>
