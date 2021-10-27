@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/PopowychSasha/react_star_wars.github.io/static/css/main.255cccc2.chunk.css",
-    "main.js": "/PopowychSasha/react_star_wars.github.io/static/js/main.f3bcc813.chunk.js",
-    "main.js.map": "/PopowychSasha/react_star_wars.github.io/static/js/main.f3bcc813.chunk.js.map",
-    "runtime-main.js": "/PopowychSasha/react_star_wars.github.io/static/js/runtime-main.3b239e9c.js",
-    "runtime-main.js.map": "/PopowychSasha/react_star_wars.github.io/static/js/runtime-main.3b239e9c.js.map",
-    "static/js/2.dac2d437.chunk.js": "/PopowychSasha/react_star_wars.github.io/static/js/2.dac2d437.chunk.js",
-    "static/js/2.dac2d437.chunk.js.map": "/PopowychSasha/react_star_wars.github.io/static/js/2.dac2d437.chunk.js.map",
-    "static/css/3.8d2e7a11.chunk.css": "/PopowychSasha/react_star_wars.github.io/static/css/3.8d2e7a11.chunk.css",
-    "static/js/3.59a6b82d.chunk.js": "/PopowychSasha/react_star_wars.github.io/static/js/3.59a6b82d.chunk.js",
-    "static/js/3.59a6b82d.chunk.js.map": "/PopowychSasha/react_star_wars.github.io/static/js/3.59a6b82d.chunk.js.map",
-    "index.html": "/PopowychSasha/react_star_wars.github.io/index.html",
-    "static/css/3.8d2e7a11.chunk.css.map": "/PopowychSasha/react_star_wars.github.io/static/css/3.8d2e7a11.chunk.css.map",
-    "static/css/main.255cccc2.chunk.css.map": "/PopowychSasha/react_star_wars.github.io/static/css/main.255cccc2.chunk.css.map",
-    "static/js/2.dac2d437.chunk.js.LICENSE.txt": "/PopowychSasha/react_star_wars.github.io/static/js/2.dac2d437.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/PopowychSasha/react_star_wars.github.io/static/media/bg.29b25be3.jpg",
-    "static/media/favorite.527b42d1.png": "/PopowychSasha/react_star_wars.github.io/static/media/favorite.527b42d1.png",
-    "static/media/not-found.02aa485d.png": "/PopowychSasha/react_star_wars.github.io/static/media/not-found.02aa485d.png"
+    "main.css": "/react_star_wars.github.io/static/css/main.87bd6071.chunk.css",
+    "main.js": "/react_star_wars.github.io/static/js/main.f3bcc813.chunk.js",
+    "main.js.map": "/react_star_wars.github.io/static/js/main.f3bcc813.chunk.js.map",
+    "runtime-main.js": "/react_star_wars.github.io/static/js/runtime-main.c1b0633a.js",
+    "runtime-main.js.map": "/react_star_wars.github.io/static/js/runtime-main.c1b0633a.js.map",
+    "static/js/2.dac2d437.chunk.js": "/react_star_wars.github.io/static/js/2.dac2d437.chunk.js",
+    "static/js/2.dac2d437.chunk.js.map": "/react_star_wars.github.io/static/js/2.dac2d437.chunk.js.map",
+    "static/css/3.8d2e7a11.chunk.css": "/react_star_wars.github.io/static/css/3.8d2e7a11.chunk.css",
+    "static/js/3.59a6b82d.chunk.js": "/react_star_wars.github.io/static/js/3.59a6b82d.chunk.js",
+    "static/js/3.59a6b82d.chunk.js.map": "/react_star_wars.github.io/static/js/3.59a6b82d.chunk.js.map",
+    "index.html": "/react_star_wars.github.io/index.html",
+    "static/css/3.8d2e7a11.chunk.css.map": "/react_star_wars.github.io/static/css/3.8d2e7a11.chunk.css.map",
+    "static/css/main.87bd6071.chunk.css.map": "/react_star_wars.github.io/static/css/main.87bd6071.chunk.css.map",
+    "static/js/2.dac2d437.chunk.js.LICENSE.txt": "/react_star_wars.github.io/static/js/2.dac2d437.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react_star_wars.github.io/static/media/bg.29b25be3.jpg",
+    "static/media/favorite.527b42d1.png": "/react_star_wars.github.io/static/media/favorite.527b42d1.png",
+    "static/media/not-found.02aa485d.png": "/react_star_wars.github.io/static/media/not-found.02aa485d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b239e9c.js",
+    "static/js/runtime-main.c1b0633a.js",
     "static/js/2.dac2d437.chunk.js",
-    "static/css/main.255cccc2.chunk.css",
+    "static/css/main.87bd6071.chunk.css",
     "static/js/main.f3bcc813.chunk.js"
   ]
 }
