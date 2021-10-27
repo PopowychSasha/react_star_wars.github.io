@@ -31,9 +31,6 @@ const favoriteReducer = (state = initialState, action) => {
                     action.payload
                 ]
             }
-            
-
-
         }
         case REMOVE_PERSON_FROM_FAVORITE: {
             return state.filter((item)=>item.id != action.payload);

@@ -9,8 +9,10 @@ const Header = ()=>{
         <ul className={styles.list__container}>
             <li><NavLink to="/" exact>Home</NavLink></li>
             <li><NavLink to="/people/?page=1">People</NavLink></li>
+            <li><NavLink to="/search">Seach</NavLink></li>
             <li><NavLink to="/not-found" exact>NotFound</NavLink></li>
-            <li style={{marginLeft:'700px'}}><NavLink to="/favorites"><img src={img} width="75px"/></NavLink></li>
+            <li><NavLink to="/fail" exact>Fail</NavLink></li>
+            <li style={{marginLeft:'400px'}}><NavLink to="/favorites"><img src={img} width="75px"/></NavLink></li>
         </ul>
     </div>
   )
